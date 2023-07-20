@@ -19,7 +19,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-    <title>Cocos Loco</title>
+    <title>Cocos Loco.com</title>
 </head>
 
 <body>
@@ -27,17 +27,19 @@
         <div class="row align-items-start">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Cocos Loco</a>
+                    <a class="navbar-brand" href="https://cocosloco.com/">Cocos Loco.com</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#"></a>
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <img src="./images/coconut_64.png" alt="CocosLoco" class="img">
+                            </a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="    ">
                             <!-- AddToAny BEGIN -->
                             <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
                                 <a class="a2a_dd" href="https://cocosloco.com/"></a>
@@ -48,11 +50,9 @@
                             <script async src="https://static.addtoany.com/menu/page.js"></script>
                             <!-- AddToAny END -->
                         </a>
+
                         <li class="nav-item">
-                            <a href="">
-                                <img src="./images/argentina.png" alt="Argentina"
-                                    class="flag__img">
-                            </a>
+                            <button class="btn btn-dark shadow" id="btnSwitch"><img src="./images/moon.png" alt="OscuroClaro" class="img"></button>
                         </li>
 
                     </ul>
@@ -138,7 +138,7 @@
                     <a href="https://facebook.com/cocoslocogames" target="_blank"><img src="./images/facebook.png" alt=""></a>
                 </div>
                 <div class="text__footer">
-                    <p>COLOSLOCO. Animaciones y sonidos para la primer infancia. @Copyright 2023.</p>
+                    <p>CocosLoco.com . Animaciones y sonidos para la primer infancia. @Copyright 2023.</p>
                 </div>
             </div>
         </div>
@@ -146,6 +146,17 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+
+    <script>
+    document.getElementById('btnSwitch').addEventListener('click',()=>{
+        if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
+            document.documentElement.setAttribute('data-bs-theme','light')
+        }
+        else {
+            document.documentElement.setAttribute('data-bs-theme','dark')
+        }
+    })
+    </script>
 </body>
 
 </html>
