@@ -131,6 +131,14 @@ a{
     justify-content: space-around;
     align-items: center;
 }
+.container__center{
+    width: 30%;
+    background-color: rgb(189, 202, 246);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
 .right__banner{
     margin: auto;
 }

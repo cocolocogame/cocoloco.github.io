@@ -1,106 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-43QSKWTGQV"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-43QSKWTGQV');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
     <title>Cocos Loco</title>
 </head>
+
 <body>
-    <div>
-        <div class="container">
+    <div class="container text-center">
+        <div class="row align-items-start">
             <div class="header">
                 <h1 class="header__title">animaciones y sonidos para la primer infancia</h1>
             </div>
             <div class="menu">
                 <ul id="button">
                     <li>
-                        <a href="./index.html">inicio</a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-0-circle-fill" viewBox="0 0 16 16">
+                                <path d="M8 4.951c-1.008 0-1.629 1.09-1.629 2.895v.31c0 1.81.627 2.895 1.629 2.895s1.623-1.09 1.623-2.895v-.31c0-1.8-.621-2.895-1.623-2.895Z"/>
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-8.012 4.158c1.858 0 2.96-1.582 2.96-3.99V7.84c0-2.426-1.079-3.996-2.936-3.996-1.864 0-2.965 1.588-2.965 3.996v.328c0 2.42 1.09 3.99 2.941 3.99Z"/>
+                            </svg>
+                        </a>
                     </li>
                     <li>
-                        <a href="./pages/sonidos.html">sonidos</a>
-                    </li>
-                    <li>
-                        <a href="./pages/juegos.html">juegos</a>
-                    </li>
-                    <li>
-                        <a href="./pages/comparte.html">comparte</a>
+                        <a href="./pages/comparte.html">
+                            <!-- AddToAny BEGIN -->
+                            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                                <a class="a2a_dd" href="https://cocosloco.com/"></a>
+                                <a class="a2a_button_facebook"></a>
+                                <a class="a2a_button_twitter"></a>
+                                <a class="a2a_button_email"></a>
+                            </div>
+                            <script async src="https://static.addtoany.com/menu/page.js"></script>
+                            <!-- AddToAny END -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
+                            </svg>
+                        </a>
                     </li>
                 </ul>
                 <div class="all__flag">
                     <div class="flag">
                         <a href="">
-                            <img src="./images/flag_england_64.png" alt="Esta es la bandera de Inglaterra" class="flag__img">
+                            <img src="./images/flag_england_64.png" alt="Esta es la bandera de Inglaterra"
+                                class="flag__img">
                         </a>
                     </div>
                     <div class="flag">
                         <a href="">
-                            <img src="./images/flag_corea_del_sur_64.png" alt="Esta es la bandera de Corea del Sur" class="flag__img">
+                            <img src="./images/flag_corea_del_sur_64.png" alt="Esta es la bandera de Corea del Sur"
+                                class="flag__img">
                         </a>
-                    </div>                   
+                    </div>
                 </div>
             </div>
-            <div class="main">
-                <div class="container__left">
-                    <div class="banner__apps">
-                        <a href=""><img src="./images/google_play.png" alt="Insignia Google Play" class="img__banner"></a>
-                        <a href=""><img src="./images/app_store.png" alt="Insignia App Store" class="img__banner"></a>
-                    </div>
-                    <div class="collor__bar">
-                        <h2>TU BARRA DE COLORES</h2>
-                        <a href="">
-                            <img src="./images/barra_de_colores_psd.jpg" alt="aqui esta la barra de colores">
-                        </a>
-                        <button type="reset" class="collor__bar__button">BORRAR</button>
-                    </div>
-                    <div class="banner__animals">
-                        <div class="banner__animals__center">   
-                            <iframe width="300" height="205" src="https://www.youtube.com/embed/S29LBXrjQws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            <p>GATITOS MAULLANDO</p> 
-                        </div>
-                        <div class="banner__animals__center">
-                            <iframe width="300" height="205" src="https://www.youtube.com/embed/bphv_iHcf3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            <p>BURRITO REBUZNA</p>
-                        </div>
-                        <div class="banner__animals__center">
-                            <iframe width="300" height="205" src="https://www.youtube.com/embed/W7BJv5uMk_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            <p>PATITO CUAC</p>
-                        </div>
-                        <div class="banner__animals__center">
-                            <iframe width="300" height="205" src="https://www.youtube.com/embed/f4E8PgDV-Ew" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            <p>GALLO KIKIRIKI</p>
-                        </div>
-                        <div class="banner__animals__center">
-                            <iframe width="300" height="205" src="https://www.youtube.com/embed/urEyqgHtij0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            <p>CHANCHITO OINK OINK</p>
-                        </div>
-                        <div class="banner__animals__center">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/iijj-jkco68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            <p>LEON ROAR</p>     
-                        </div>
-                    </div>                    
-                </div>
-                <div class="container__right">
-                    <div class="right__banner">
-                        <img src="" alt="">
-                    </div>
-                    <div class="right__banner">
-                        <img src="" alt="">
-                    </div>                   
-                </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <div class="row align-items-center">
+            <div class="col">
+                Publicidad izquierda
             </div>
+
+            <div class="col">
+                <!-- aca una grilla de 3x3-->
+
+                <!-- row 1-->
+                <div class="row">
+                    <div class="col">
+                        <iframe src="https://www.youtube.com/embed/S29LBXrjQws" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <p>GATITOS MAULLANDO</p>
+                    </div>
+                    <div class="col-6">
+                        <iframe src="https://www.youtube.com/embed/bphv_iHcf3A" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <p>BURRITO REBUZNA</p>
+                    </div>
+                    <div class="col">
+                        <iframe src="https://www.youtube.com/embed/W7BJv5uMk_o" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <p>PATITO CUAC</p>
+                    </div>
+                </div>
+                <!-- row 2-->
+                <div class="row">
+                    <div class="col">
+                        <iframe src="https://www.youtube.com/embed/f4E8PgDV-Ew" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <p>GALLO KIKIRIKI</p>
+                    </div>
+                    <div class="col-6">
+                        <iframe src="https://www.youtube.com/embed/urEyqgHtij0" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <p>CHANCHITO OINK OINK</p>
+                    </div>
+                    <div class="col">
+                        <iframe src="https://www.youtube.com/embed/iijj-jkco68" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <p>LEON ROAR</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="col">
+                Publicidad Derecha
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+        <div class="row align-items-end">
             <div class="footer">
                 <div class="text__shareit">
-                    <a href="https://www.youtube.com/" target="_blank"><img src="./images/youtube.png" alt="">YouTube</a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram.png" alt="">Instagram</a>
+                    <a href="https://www.youtube.com/channel/UCOUTn_caumDswbV1mwEfKxA" target="_blank"><img src="./images/youtube.png"
+                            alt="">YouTube</a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./images/instagram.png"
+                            alt="">Instagram</a>
                 </div>
                 <div class="text__footer">
-                    <a href="./pages/animaciones.html">Animaciones</a>
-                    <a href="./pages/sonidos.html">Sonidos</a>
                     <p>COLOSLOCO. Animaciones y sonidos para la primer infancia. @Copyright 2023.</p>
                 </div>
             </div>
         </div>
     </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script> -->
 </body>
+
 </html>
