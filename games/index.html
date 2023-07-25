@@ -1,26 +1,22 @@
 <!DOCTYPE html>
-<!--
-	NOTES:
-	1. All tokens are represented by '$' sign in the template.
-	2. You can write your code only wherever mentioned.
-	3. All occurrences of existing tokens will be replaced by their appropriate values.
-	4. Blank lines will be removed automatically.
-	5. Remove unnecessary comments before creating your template.
--->
-<html>
+<html data-bs-theme="dark" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="authoring-tool" content="Adobe_Animate_CC">
-    <title></title>
-    <!-- write your code here -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <title>Cocos Loco.com</title>
 
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <script src='../js/jquery-1.10.2.min.js'></script>
     <script src="../js/jquery-ui.min.js"></script>
     <script src='../js/buzz.js'></script>
     <script src='../js/preloader.js'></script>
-    <link href="../js/preloader.css" rel="stylesheet" media="all">
 
     <script>
         if (!buzz.isMP3Supported() && !buzz.isWAVSupported()) { alert("No se soporta el navegador :("); }
@@ -38,13 +34,9 @@
         }
 
         @font-face {
-            font-family: 'agent_orangeregular';
-            src: url('../agentorange-webfont.eot');
-            src: url('../agentorange-webfont.eot?#iefix') format('embedded-opentype'),
-                url('../agentorange-webfont.woff2') format('woff2'),
-                url('../agentorange-webfont.woff') format('woff'),
-                url('../agentorange-webfont.ttf') format('truetype'),
-                url('../agentorange-webfont.svg#agent_orangeregular') format('svg');
+            font-family: 'agent_orangeregular, Arial';
+            src: url('agentorange-webfont.eot');
+            src: url('agentorange-webfont.eot?#iefix') format('embedded-opentype');
             font-weight: normal;
             font-style: normal;
         }
@@ -53,7 +45,7 @@
             position: absolute;
             top: 510px;
             left: 40px;
-            width: 485px;
+            width: 610px;
             height: 30px;
             background-color: #e3e52c;
             color: #311f58;
@@ -111,7 +103,6 @@
         window.addEventListener("load", inicio, false);
 
         function inicio() {
-            $('#fundo').attr('src', 'fundo.svg');
             //*************************//
             $('#indique').html('PRESIONA QUALQUiER TECLA PARA JUGAR');
             $('#voltar').html('VOLVER');
@@ -209,21 +200,12 @@
 
 <body onload="init();" style="margin:0px;">
     <div id="animation_container" style="background-color:rgba(255, 255, 255, 0.00); width:690px; height:600px">
-        <canvas id="canvas" width="690" height="600"
-            style="position: absolute; display: block; background-color:rgba(255, 255, 255, 0.00);"></canvas>
-        <a id='linkLogo' href='#' target='_top'><img id='logo1'
-                style='position:absolute;top:18px;left:30px;z-index:999;'></a>
-        <img id='logo2' style='position:absolute;top:28px;left:485px;z-index:999;'>
-        <div id='indique'></div>
-        <a id='linkColorir' href='#' target='_blank'><img id='colorir'
-                style='position:absolute;top:563px;left:30px;z-index:999;'></a>
-        <a id='linkVoltar' href='#' target='_top'>
-            <div id='voltar'></div>
-        </a>
-        <div id="dom_overlay_container"
-            style="pointer-events:none; overflow:hidden; width:690px; height:600px; position: absolute; left: 0px; top: 0px; display: block;">
+        <canvas id="canvas" width="690" height="600" style="position: absolute; display: block; background-color: rgba(255, 255, 255, 0); width: 690px; height: 600px;"></canvas>
+        <div id="indique">PRESIONA QUALQUiER TECLA PARA JUGAR</div>
+        <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:690px; height:600px; position: absolute; left: 0px; top: 0px; display: block;">
         </div>
     </div>
+
 </body>
 
 </html>
